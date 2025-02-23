@@ -1,0 +1,53 @@
+{
+	"Id": "exchange-test",
+	"AvailableFunds": {
+		"Crypto": 1337.133,
+		"Euro": 420.11
+	},
+	"OrderBook": {
+		"Bids": [
+			{
+				"Order": {
+					"Id": "6e9fe255-a776-4965-9bf4-9f076361f5cb",
+					"Time": "2024-03-01T14:41:06.563Z",
+					"Type": "Buy",
+					"Kind": "Limit",
+					"Amount": 0.01,
+					"Price": 57226.46
+				}
+			},
+			{
+				"Order": {
+					"Id": "86b69db0-b1cb-49d5-beb7-7068cfcbe14d",
+					"Time": "2024-03-01T21:11:09.439Z",
+					"Type": "Buy",
+					"Kind": "Limit",
+					"Amount": 0.5,
+					"Price": 57226.08
+				}
+			}
+		],
+		"Asks": [
+			{
+				"Order": {
+					"Id": "719f85c9-163e-471c-8edd-67021cfef195",
+					"Time": "2024-03-01T00:46:50.389Z",
+					"Type": "Sell",
+					"Kind": "Limit",
+					"Amount": 0.405,
+					"Price": 57299.73
+				}
+			},
+			{
+				"Order": {
+					"Id": "4d8d9414-399a-4ceb-8d09-2af7e4db6000",
+					"Time": "2024-03-01T09:46:16.308Z",
+					"Type": "Sell",
+					"Kind": "Limit",
+					"Amount": 0.405,
+					"Price": 57299.92
+				}
+			}
+		]
+	}
+}
