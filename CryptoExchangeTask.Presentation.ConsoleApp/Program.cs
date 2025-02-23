@@ -5,7 +5,7 @@ using CryptoExchangeTask.Domain.Enums;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace CryptoExchangeTask.ConsoleApp;
+namespace CryptoExchangeTask.Presentation.ConsoleApp;
 
 internal class Program
 {
@@ -43,7 +43,13 @@ internal class Program
         try
         {
             // Get the execution plan
-            var executionPlan = executionService.GetExecutionPlan(orderType, orderAmount);
+            var request = new GetExecutionPlanRequest
+            {
+                OrderType = orderType,
+                OrderAmount = orderAmount
+            };
+
+            var executionPlan = executionService.GetExecutionPlan(request);
 
             // Print execution plan
             PrintExecutionPlan(executionPlan, orderType);

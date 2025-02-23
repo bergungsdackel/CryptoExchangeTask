@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Infrastructure", "CryptoExchangeTask.Infrastructure\CryptoExchangeTask.Infrastructure.csproj", "{401E0006-AB3D-4EB7-9FBB-D22204F21A13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.ConsoleApp", "CryptoExchangeTask.ConsoleApp\CryptoExchangeTask.ConsoleApp.csproj", "{BD84F8E1-E730-4B0E-ACE8-3D3A8ECC85BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Presentation.ConsoleApp", "CryptoExchangeTask.Presentation.ConsoleApp\CryptoExchangeTask.Presentation.ConsoleApp.csproj", "{BD84F8E1-E730-4B0E-ACE8-3D3A8ECC85BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Domain.UnitTest", "CryptoExchangeTask.Domain.UnitTest\CryptoExchangeTask.Domain.UnitTest.csproj", "{10A59D95-0736-437A-A685-53B10E016595}"
 EndProject
