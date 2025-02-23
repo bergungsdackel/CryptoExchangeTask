@@ -10,8 +10,7 @@ public interface IExecutionPlanService
     /// <summary>
     /// Gets the execution plan for a given order type and amount across multiple exchanges.
     /// </summary>
-    /// <param name="orderType">The type of the order.</param>
-    /// <param name="orderAmount">The amount of the order.</param>
+    /// <param name="request">The request containing order type and amount details.</param>
     /// <returns>An execution plan detailing how the order should be executed across exchanges.</returns>
-    ExecutionPlanDto GetExecutionPlan(Domain.Enums.OrderType orderType, decimal orderAmount);
+    ExecutionPlanDto GetExecutionPlan(GetExecutionPlanRequest request);
 }

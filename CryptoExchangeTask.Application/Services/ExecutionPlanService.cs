@@ -1,7 +1,6 @@
 ﻿using CryptoExchangeTask.Application.Abstractions;
 using CryptoExchangeTask.Application.DTOs;
 using CryptoExchangeTask.Domain.Abstractions;
-using CryptoExchangeTask.Domain.Enums;
 
 namespace CryptoExchangeTask.Application.Services;
 
@@ -17,13 +16,18 @@ public class ExecutionPlanService : IExecutionPlanService
         _exchangeRepository = exchangeRepository;
     }
 
-    public ExecutionPlanDto GetExecutionPlan(OrderType orderType, decimal orderAmount)
+    public ExecutionPlanDto GetExecutionPlan(GetExecutionPlanRequest request)
     {
+        ArgumentNullException.ThrowIfNull(request, nameof(request));
+
         // Validate input parameters
-        if (orderAmount <= 0)
+        if (request.OrderAmount <= 0)
         {
-            throw new ArgumentException("Order amount must be greater than zero.", nameof(orderAmount));
+            throw new ArgumentException("Order amount must be greater than zero.", nameof(request.OrderAmount));
         }
+
+        var orderAmount = request.OrderAmount;
+        var orderType = request.OrderType;
 
         // Get all exchanges
         var exchanges = _exchangeRepository.GetAllExchanges().ToList();
