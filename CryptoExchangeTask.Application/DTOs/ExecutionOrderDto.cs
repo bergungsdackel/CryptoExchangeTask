@@ -11,6 +11,11 @@ public class ExecutionOrderDto
     public required string ExchangeId { get; init; }
 
     /// <summary>
+    /// Gets the unique identifier for the order.
+    /// </summary>
+    public required Guid OrderId { get; init; }
+
+    /// <summary>
     /// Gets the price of the order.
     /// </summary>
     public decimal Price { get; init; }

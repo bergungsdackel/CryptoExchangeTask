@@ -34,6 +34,7 @@ public class ExecutionPlanner : IExecutionPlanner
                 candidateOrders.Add(new OrderCandidate
                 {
                     ExchangeId = exchange.Id,
+                    OrderId = ask.Order.Id,
                     Price = ask.Order.Price,
                     Amount = ask.Order.Amount
                 });
@@ -59,6 +60,7 @@ public class ExecutionPlanner : IExecutionPlanner
                 candidateOrders.Add(new OrderCandidate
                 {
                     ExchangeId = exchange.Id,
+                    OrderId = bid.Order.Id,
                     Price = bid.Order.Price,
                     Amount = bid.Order.Amount
                 });
@@ -101,6 +103,7 @@ public class ExecutionPlanner : IExecutionPlanner
                     executionPlan.AddOrder(new ExecutionOrder
                     {
                         ExchangeId = candidate.ExchangeId,
+                        OrderId = candidate.OrderId,
                         Price = candidate.Price,
                         Amount = executableAmount
                     });
@@ -120,6 +123,7 @@ public class ExecutionPlanner : IExecutionPlanner
                     executionPlan.AddOrder(new ExecutionOrder
                     {
                         ExchangeId = candidate.ExchangeId,
+                        OrderId = candidate.OrderId,
                         Price = candidate.Price,
                         Amount = executableAmount
                     });
@@ -145,6 +149,8 @@ public class ExecutionPlanner : IExecutionPlanner
     private class OrderCandidate
     {
         public required string ExchangeId { get; set; }
+
+        public required Guid OrderId { get; set; }
 
         public required decimal Price { get; set; }
 

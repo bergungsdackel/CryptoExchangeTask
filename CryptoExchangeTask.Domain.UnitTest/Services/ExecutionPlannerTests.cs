@@ -62,10 +62,12 @@ public class ExecutionPlannerTests
         executionPlanOrders.Count.ShouldBe(2);
 
         executionPlanOrders[0].ExchangeId.ShouldBe(exchange2.Id);
+        executionPlanOrders[0].OrderId.ShouldBe(exchange2.OrderBook.Asks.ElementAt(0).Order.Id);
         executionPlanOrders[0].Price.ShouldBe(2900);
         executionPlanOrders[0].Amount.ShouldBe(5);
 
         executionPlanOrders[1].ExchangeId.ShouldBe(exchange1.Id);
+        executionPlanOrders[1].OrderId.ShouldBe(exchange1.OrderBook.Asks.ElementAt(0).Order.Id);
         executionPlanOrders[1].Price.ShouldBe(3000);
         executionPlanOrders[1].Amount.ShouldBe(1);
     }
@@ -128,10 +130,12 @@ public class ExecutionPlannerTests
         executionPlanOrders.Count.ShouldBe(2);
 
         executionPlanOrders[0].ExchangeId.ShouldBe(exchange1.Id);
+        executionPlanOrders[0].OrderId.ShouldBe(exchange1.OrderBook.Bids.ElementAt(0).Order.Id);
         executionPlanOrders[0].Price.ShouldBe(3100);
         executionPlanOrders[0].Amount.ShouldBe(2);
 
         executionPlanOrders[1].ExchangeId.ShouldBe(exchange2.Id);
+        executionPlanOrders[1].OrderId.ShouldBe(exchange2.OrderBook.Bids.ElementAt(0).Order.Id);
         executionPlanOrders[1].Price.ShouldBe(3000);
         executionPlanOrders[1].Amount.ShouldBe(1);
     }
@@ -273,6 +277,7 @@ public class ExecutionPlannerTests
         executionPlanOrders.Count.ShouldBe(1);
 
         executionPlanOrders[0].ExchangeId.ShouldBe(exchange.Id);
+        executionPlanOrders[0].OrderId.ShouldBe(exchange.OrderBook.Asks.ElementAt(0).Order.Id);
         executionPlanOrders[0].Price.ShouldBe(3000);
         executionPlanOrders[0].Amount.ShouldBe(1);
     }
@@ -303,6 +308,7 @@ public class ExecutionPlannerTests
         executionPlanOrders.Count.ShouldBe(1);
 
         executionPlanOrders[0].ExchangeId.ShouldBe(exchange.Id);
+        executionPlanOrders[0].OrderId.ShouldBe(exchange.OrderBook.Bids.ElementAt(0).Order.Id);
         executionPlanOrders[0].Price.ShouldBe(3100);
         executionPlanOrders[0].Amount.ShouldBe(1);
     }
@@ -342,10 +348,12 @@ public class ExecutionPlannerTests
         executionPlanOrders.Count.ShouldBe(2);
 
         executionPlanOrders[0].ExchangeId.ShouldBe(exchange1.Id);
+        executionPlanOrders[0].OrderId.ShouldBe(exchange1.OrderBook.Asks.ElementAt(0).Order.Id);
         executionPlanOrders[0].Price.ShouldBe(3000);
         executionPlanOrders[0].Amount.ShouldBe(1);
 
         executionPlanOrders[1].ExchangeId.ShouldBe(exchange2.Id);
+        executionPlanOrders[1].OrderId.ShouldBe(exchange2.OrderBook.Asks.ElementAt(0).Order.Id);
         executionPlanOrders[1].Price.ShouldBe(3000);
         executionPlanOrders[1].Amount.ShouldBe(1.5m);
     }
@@ -385,10 +393,12 @@ public class ExecutionPlannerTests
         executionPlanOrders.Count.ShouldBe(2);
 
         executionPlanOrders[0].ExchangeId.ShouldBe(exchange1.Id);
+        executionPlanOrders[0].OrderId.ShouldBe(exchange1.OrderBook.Bids.ElementAt(0).Order.Id);
         executionPlanOrders[0].Price.ShouldBe(3100);
         executionPlanOrders[0].Amount.ShouldBe(0.8m);
 
         executionPlanOrders[1].ExchangeId.ShouldBe(exchange2.Id);
+        executionPlanOrders[1].OrderId.ShouldBe(exchange2.OrderBook.Bids.ElementAt(0).Order.Id);
         executionPlanOrders[1].Price.ShouldBe(3100);
         executionPlanOrders[1].Amount.ShouldBe(0.4m);
     }

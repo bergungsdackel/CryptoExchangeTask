@@ -45,6 +45,7 @@ public class ExecutionPlanService : IExecutionPlanService
             Orders = executionPlan.Orders.Select(executionOrder => new ExecutionOrderDto
             {
                 ExchangeId = executionOrder.ExchangeId,
+                OrderId = executionOrder.OrderId,
                 Price = executionOrder.Price,
                 Amount = executionOrder.Amount
             }).ToList()
