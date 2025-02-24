@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Presenta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Domain.UnitTest", "CryptoExchangeTask.Domain.UnitTest\CryptoExchangeTask.Domain.UnitTest.csproj", "{10A59D95-0736-437A-A685-53B10E016595}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchangeTask.Presentation.Api", "CryptoExchangeTask.Presentation.Api\CryptoExchangeTask.Presentation.Api.csproj", "{558D53C5-F2C9-4C9D-B9C1-C4A6DAF38832}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{10A59D95-0736-437A-A685-53B10E016595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10A59D95-0736-437A-A685-53B10E016595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10A59D95-0736-437A-A685-53B10E016595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558D53C5-F2C9-4C9D-B9C1-C4A6DAF38832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558D53C5-F2C9-4C9D-B9C1-C4A6DAF38832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558D53C5-F2C9-4C9D-B9C1-C4A6DAF38832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558D53C5-F2C9-4C9D-B9C1-C4A6DAF38832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +71,7 @@ Global
 		{401E0006-AB3D-4EB7-9FBB-D22204F21A13} = {A9B57AC2-D2FE-40D8-90A3-9369075C05F8}
 		{BD84F8E1-E730-4B0E-ACE8-3D3A8ECC85BA} = {51F32A87-41C8-4A20-837F-F5722D6DFDDA}
 		{10A59D95-0736-437A-A685-53B10E016595} = {6552CFFD-2992-444D-95D3-11F6BA02E117}
+		{558D53C5-F2C9-4C9D-B9C1-C4A6DAF38832} = {51F32A87-41C8-4A20-837F-F5722D6DFDDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {320AB951-5118-4100-AEC4-BD287078D501}
