@@ -1,5 +1,7 @@
 # MetaExchange Case Study
 
+[![Build Status](https://github.com/bergungsdackel/CryptoExchangeTask/actions/workflows/dotnet.yml/badge.svg)](https://github.com/bergungsdackel/CryptoExchangeTask/actions)
+
 ## Overview
 This repository contains a case study implementation of a meta-exchange system for cryptocurrency order execution. The solution is built with .NET Core. It includes:
 - A **Domain Layer** for core business logic.
