@@ -85,7 +85,7 @@ internal class Program
 
         foreach (var order in executionPlan.Orders)
         {
-            Console.WriteLine($"Exchange: {order.ExchangeId}; Price: {order.Price}; Amount: {order.Amount}");
+            Console.WriteLine($"Exchange: {order.ExchangeId}; OrderId: {order.OrderId}; Price: {order.Price}; Amount: {order.Amount}");
         }
 
         Console.WriteLine($"Total {(orderType == OrderType.Buy ? "Cost" : "Revenue")}: {executionPlan.TotalCost}");
